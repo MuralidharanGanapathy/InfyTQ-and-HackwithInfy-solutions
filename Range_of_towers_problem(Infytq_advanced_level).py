@@ -14,7 +14,7 @@ for i in range(len(l) - 2, 0, -1):
         d[i] = "peak"
 peak_indices = []
 for i in range(1, len(l) - 1):
-    if i in d.keys() and l[i] + l[i + 1] > 0 and d[i] == "peak":
+    if i in d.keys() and l[i] - l[i + 1] > 0 and d[i] == "peak":
         peak_indices.append(i)
 tower = -1
 count = 0
